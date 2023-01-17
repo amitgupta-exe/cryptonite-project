@@ -1,0 +1,87 @@
+.header-adjuster {
+    width: 100%;
+    height: 15vh;
+}
+
+.header {
+    background-color: #665B90;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+    font-family: "Inria Sans";
+    position: fixed;
+}
+
+.logo {
+    width: max-content;
+    height: max-content;
+    padding: 15% 25%;
+    background-color: #742929;
+    color: white;
+    box-shadow: 0.3rem 0.3rem 0 black;
+}
+
+.logo-text {
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+
+.shop-button {
+    width: 8rem;
+    height: 3rem;
+    padding: 0.5rem;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    letter-spacing: 0.2rem;
+    border: none;
+}
+
+.shop-button:hover {
+    color: white;
+    background-color: #742929;
+    transition: all 0.3s ease;
+    box-shadow: 0.2rem 0.2rem 0 black;
+}
+
+.links-dropdown-button {
+
+    h3 {
+        padding: 4rem 0;
+    }
+
+}
+
+.links-dropdown-body {
+    width: 70vw;
+    height: 50vh;
+    background-color: white;
+    position: absolute;
+    top: 15vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.links-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 2rem;
+    place-items: center;
+}
+
+.link {
+    width: 30%;
+    height: 30%;
+    color: grey;
+    transition: 0.2s;
+
+}
+
+.link:hover {
+    transform: scale(1.2);
+    transition: 0.2s;
+}

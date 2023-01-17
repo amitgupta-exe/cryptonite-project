@@ -1,0 +1,41 @@
+.checkout-items {}
+
+.form-container {
+    width: 100%;
+    height: 85vh;
+    display: grid;
+    place-items: center;
+}
+
+
+
+.checkout-form {
+    width: 30rem;
+    height: 70vh;
+    background-color: #d5d5d5;
+    padding: 2rem;
+}
+
+.inputs {
+    width: 90%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.name,
+.mobile,
+.email,
+.address {
+    padding-left: 1rem;
+
+    width: 100%;
+    height: 15%;
+    border: none
+}
+
+.place-order-btn {
+    width: 50%
+}

@@ -1,0 +1,110 @@
+.container-middle {
+    padding: 0 15%;
+    display: flex;
+}
+
+.main {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #665B90;
+}
+
+.front-page {
+    width: 100%;
+    height: 85vh;
+    background: #665B90;
+    display: grid;
+    place-items: center;
+}
+
+.left-section {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.right-section {
+    width: 30%;
+    height: 80%;
+}
+
+
+.form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+}
+
+
+.input,
+.output {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: white;
+
+
+}
+
+
+.input,
+.output {
+    textarea {
+        width: 90%;
+        height: 25vh;
+        resize: none;
+        border-radius: 1.5rem;
+        box-shadow: 0.5rem 0.5rem 0 black;
+        padding: 1rem;
+    }
+
+    textarea:focus{
+        border: red
+    }
+}
+
+
+
+.wiki {
+    height: 100%;
+    background-color: white;
+    border-radius: 1.5rem;
+    box-shadow: 0.5rem 0.5rem 0 black;
+    padding: 2rem;
+    text-align: start;
+    font-family: "Inter";
+    overflow: scroll;
+
+    h2 {
+        font-weight: 900;
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        color: grey;
+        font-size: 0.8rem;
+    }
+
+    p {
+
+        font-size: 1rem;
+
+    }
+}
+
+.settings {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
