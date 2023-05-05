@@ -30,7 +30,8 @@ Merchandise Ecommerce Landing Page
 
 
 Cart
-![Screenshot (172)](https://user-images.githubusercontent.com/72860177/236477205-2b804e2e-36e7-40a1-99a3-ed26a37de2ee.png)
+![Screenshot (173)](https://user-images.githubusercontent.com/72860177/236477706-3f5a76eb-f5f0-47b6-9723-b88596ebaade.png)
+
 
 
 
