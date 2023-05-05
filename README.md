@@ -8,23 +8,37 @@ cd merchandisemanagement/frontend, npm install, npm start
 
 SNAPSHOTS:
 
-LandingPage
-![Screenshot (49)](https://user-images.githubusercontent.com/72860177/216292820-28335fe9-becb-45e6-93d8-229b1b588613.png)
+Landing Page
+![Screenshot (170)](https://user-images.githubusercontent.com/72860177/236477009-9f2e2263-60bb-41b4-bcc6-d69e1c724ffe.png)
+
+
 
 
 Cryptography Methods Menu
-![Screenshot (50)](https://user-images.githubusercontent.com/72860177/216292922-c232e966-b4b5-4117-a118-ea0a3e3b3e7a.png)
+![Screenshot (171)](https://user-images.githubusercontent.com/72860177/236477036-113035b5-7cf2-4138-9e04-0b1071ff94ef.png)
+
+
 
 Routing to Individual Method Page for Cipher and Decipher
-![Screenshot (51)](https://user-images.githubusercontent.com/72860177/216293008-e697e0ed-68b8-4649-b877-524d818ca6ee.png)
+![Screenshot (176)](https://user-images.githubusercontent.com/72860177/236477154-5793d6f1-d7c6-4e39-95d2-fee149734382.png)
+
 
 
 Merchandise Ecommerce Landing Page
-![Screenshot (52)](https://user-images.githubusercontent.com/72860177/216293053-7a2dc4ca-7f1c-4a00-9b75-697286002bcb.png)
+![Screenshot (177)](https://user-images.githubusercontent.com/72860177/236477411-554f8e58-3230-482c-90f9-a3bf731fc3c1.png)
+
+
 
 Cart
-![Screenshot (53)](https://user-images.githubusercontent.com/72860177/216293060-92acfbfd-f865-4555-ad97-ce0beafaa16d.png)
+![Screenshot (172)](https://user-images.githubusercontent.com/72860177/236477205-2b804e2e-36e7-40a1-99a3-ed26a37de2ee.png)
+
 
 
 Checkout
-![Screenshot (54)](https://user-images.githubusercontent.com/72860177/216293085-7e8c95f6-27d4-44f3-896d-9d2fa2ee5257.png)
+![Screenshot (174)](https://user-images.githubusercontent.com/72860177/236477224-6973c6bf-52ee-47c6-b6ef-6537d5792b3b.png)
+
+
+Merchandise Management, Add, Remove and Edit Products
+![Screenshot (172)](https://user-images.githubusercontent.com/72860177/236477300-620ef50b-eab7-45ef-90d3-c97f6ddb0a15.png)
+
+
