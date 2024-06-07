@@ -21,47 +21,33 @@ const Atbash = () => {
     }
 
     //JSX
-    return <main className="main container-middle">
-        <div className="left-section">
+    return (<main className="main">
+        <h1 className="title">
+            Atbash
+        </h1>
 
-            {/* <img className="caeser-bg" src={} alt="" /> */} 
 
-            <form className="form" onSubmit={(e) => { e.preventDefault(); }} action="">
+        <form className="form" onSubmit={(e) => { e.preventDefault(); }} action="">
 
-                <div className="input">
-                    <label htmlFor="input">Enter Text</label>
-                    <textarea type="text" id="input" />
-                </div>
-
-                <div className="settings">
-                    <select defaultValue={"encrypt"} name="" id="mode">
-                        <option value="encrypt">Encrypt</option>
-                        <option value="decrypt">Decrypt</option>
-                    </select>
-                    <button onClick={() => { atbash(document.getElementById("input").value, document.getElementById("mode").value) }} type="submit">Convert</button>
-                </div>
-
-                <div className="output">
-                    <label htmlFor="output">Output</label>
-                    <textarea name="" id="" value={atbashText} onChange={(e) => {
-                        setatbashText(e.target.value)
-                    }} />
-
-                </div>
-            </form>
-        </div>
-
-        <div className="right-section">
-            <div className="wiki">
-                <div>
-                    <h2>Atbash Cipher </h2>
-                    <h3>Hebrews</h3>
-                    <p>Atbash is a monoalphabetic substitution cipher originally used to encrypt the Hebrew alphabet.</p>
-                </div>
+            <div className="input-output">
+                <textarea placeholder='Input' type="text" id="input" />
+                <textarea placeholder='Output' name="" id="" value={atbashText} onChange={(e) => {
+                    setatbashText(e.target.value)
+                }} />
             </div>
-        </div>
+
+            <div className="settings">
+                <select defaultValue={"encrypt"} name="" id="mode">
+                    <option value="encrypt">Encrypt</option>
+                    <option value="decrypt">Decrypt</option>
+                </select>
+                <button onClick={() => { atbash(document.getElementById("input").value, document.getElementById("mode").value) }} type="submit">Convert</button>
+            </div>
+
+        </form>
 
     </main>
+    )
 };
 
 export default Atbash;

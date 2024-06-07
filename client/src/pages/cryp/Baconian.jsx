@@ -50,17 +50,6 @@ const Baconian = () => {
             </form>
 
         </div>
-        <div className="right-section">
-
-            <div className="wiki">
-                <div>
-
-                    <h2>Baconian Cipher </h2>
-                    <h3>Francis Bacon</h3>
-                    <p>Bacon's cipher or the Baconian cipher is a method of steganographic message encoding devised by Francis Bacon in 1605</p>
-                </div>
-            </div>
-        </div>
 
     </main>
 };

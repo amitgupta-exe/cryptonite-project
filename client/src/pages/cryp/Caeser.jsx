@@ -64,73 +64,56 @@ const Caeser = () => {
   }
 
   return (
-    <main className="main container-middle">
+    <main className="main">
 
-      <div className="left-section">
+      <h1 className="title">
+        Caeser Cipher
+      </h1>
 
-        <form className="form" onSubmit={(e) => { e.preventDefault(); }} action="">
+      <form className="form" onSubmit={(e) => { e.preventDefault(); }} action="">
 
-          <h1 className="title">
-            Caeser Cipher
-          </h1>
-
-          <div className="input">
-            <label htmlFor="input">Enter Text</label>
-            <textarea onChange={(e) => { setText(e.target.value); }} type="text" id="input" />
-          </div>
-
-          <div className="settings">
-            <select defaultValue={"encrypt"} name="" id="mode">
-              <option value="encrypt">Encrypt</option>
-              <option value="decrypt">Decrypt</option>
-            </select>
-            <select defaultValue={13} name="Rot-13" id="rot">
-              <option value="1">Rot-1</option>
-              <option value="2">Rot-2</option>
-              <option value="3">Rot-3</option>
-              <option value="4">Rot-4</option>
-              <option value="5">Rot-5</option>
-              <option value="6">Rot-6</option>
-              <option value="7">Rot-7</option>
-              <option value="8">Rot-8</option>
-              <option value="9">Rot-9</option>
-              <option value="10">Rot-10</option>
-              <option value="11">Rot-11</option>
-              <option value="12">Rot-12</option>
-              <option value="13">Rot-13</option>
-              <option value="14">Rot-14</option>
-              <option value="15">Rot-15</option>
-              <option value="16">Rot-16</option>
-              <option value="17">Rot-17</option>
-              <option value="18">Rot-18</option>
-              <option value="19">Rot-19</option>
-              <option value="20">Rot-20</option>
-              <option value="21">Rot-21</option>
-              <option value="22">Rot-22</option>
-              <option value="23">Rot-23</option>
-              <option value="24">Rot-24</option>
-              <option value="25">Rot-25</option>
-            </select>
-            <button onClick={() => { Rot(document.getElementById("rot").value, document.getElementById("mode").value) }} type="submit">Convert</button>
-          </div>
-
-          <div className="output">
-            <label htmlFor="output">Output</label>
-            <textarea name="" id="" value={rotText} onChange={(e) => {
-              setRotText(e.target.value)
-            }} />
-          </div>
-
-        </form>
-      </div>
-
-      <div className="right-section">
-        <div className="wiki">
-          <h2>ROT13 </h2>
-          <h3>("rotate by 13 places", sometimes hyphenated ROT-13)</h3>
-          <p>a simple letter substitution cipher that replaces a letter with the 13th letter after it in the alphabet. ROT13 is a special case of the Caesar cipher which was developed in ancient Rome by Julius Caesar (100 BC - 44 BC)</p>
+        <div className="input-output">
+            <textarea onChange={(e) => { setText(e.target.value); }} type="text" id="Input" placeholder="Input" />
+            <textarea name="" id="" placeholder="Output" value={rotText} onChange={(e) => { setRotText(e.target.value) }} />
         </div>
-      </div>
+
+        <div className="settings">
+          <select defaultValue={"encrypt"} name="" id="mode">
+            <option value="encrypt">Encrypt</option>
+            <option value="decrypt">Decrypt</option>
+          </select>
+          <select defaultValue={13} name="Rot-13" id="rot">
+            <option value="1">Rot-1</option>
+            <option value="2">Rot-2</option>
+            <option value="3">Rot-3</option>
+            <option value="4">Rot-4</option>
+            <option value="5">Rot-5</option>
+            <option value="6">Rot-6</option>
+            <option value="7">Rot-7</option>
+            <option value="8">Rot-8</option>
+            <option value="9">Rot-9</option>
+            <option value="10">Rot-10</option>
+            <option value="11">Rot-11</option>
+            <option value="12">Rot-12</option>
+            <option value="13">Rot-13</option>
+            <option value="14">Rot-14</option>
+            <option value="15">Rot-15</option>
+            <option value="16">Rot-16</option>
+            <option value="17">Rot-17</option>
+            <option value="18">Rot-18</option>
+            <option value="19">Rot-19</option>
+            <option value="20">Rot-20</option>
+            <option value="21">Rot-21</option>
+            <option value="22">Rot-22</option>
+            <option value="23">Rot-23</option>
+            <option value="24">Rot-24</option>
+            <option value="25">Rot-25</option>
+          </select>
+          <button onClick={() => { Rot(document.getElementById("rot").value, document.getElementById("mode").value) }} type="submit">Convert</button>
+        </div>
+        
+      </form>
+
     </main>
   )
 }
