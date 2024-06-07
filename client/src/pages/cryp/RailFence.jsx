@@ -141,47 +141,35 @@ const RailFence = () => {
 
     //Page
     return (
-        <main className="main container-middle">
+        <main className="main">
 
-            {/* <img className="caeser-bg" src={} alt="" /> */}
-            <div className="left-section">
+            <form className="form" onSubmit={(e) => { e.preventDefault(); }} action="">
 
-                <form className="form" onSubmit={(e) => { e.preventDefault(); }} action="">
-
-                    <div className="input">
-                        <label htmlFor="input">Enter Text:</label>
-                        <textarea type="text" id="input" />
-                    </div>
-
-                    <div className="settings">
-                        <div>
-                            <label htmlFor="#key">Enter Key (Number): </label>
-                            <input id='key' type="text" />
-                        </div>
-                        <select defaultValue={"encrypt"} name="" id="mode">
-                            <option value="encrypt">Encrypt</option>
-                            <option value="decrypt">Decrypt</option>
-                        </select>
-                        <button onClick={() => { fence(document.getElementById("input").value, document.getElementById("mode").value, document.getElementById("key").value) }} type="submit">Convert</button>
-                    </div>
-                    <div className="output">
-                        <label htmlFor="output">Output:</label>
-
-                        <textarea name="" id="" value={fenceText} onChange={(e) => {
-                            setFenceText(e.target.value)
-                        }} />
-                    </div>
-                </form>
-            </div>
-            <div className="right-section">
-                <div className="wiki">
-                    <div>
-                        <h2>RailFence Cipher </h2>
-                        <h3>Greeks</h3>
-                        <p>The rail fence cipher (also called a zigzag cipher) is a classical type of transposition cipher. It derives its name from the manner in which encryption is performed.</p>
-                    </div>
+                <div className="input">
+                    <textarea type="text" id="input" />
                 </div>
-            </div>
+
+                <div className="settings">
+                    <div>
+                        <input id='key' type="text" />
+                    </div>
+                    <select defaultValue={"encrypt"} name="" id="mode">
+                        <option value="encrypt">Encrypt</option>
+                        <option value="decrypt">Decrypt</option>
+                    </select>
+                    <button onClick={() => { fence(document.getElementById("input").value, document.getElementById("mode").value, document.getElementById("key").value) }} type="submit">Convert</button>
+                </div>
+
+                <div className="output">
+                    <label htmlFor="output">Output:</label>
+
+                    <textarea name="" id="" value={fenceText} onChange={(e) => {
+                        setFenceText(e.target.value)
+                    }} />
+                </div>
+                
+            </form>
+
         </main>
     )
 }

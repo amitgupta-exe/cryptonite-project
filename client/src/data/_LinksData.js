@@ -14,10 +14,10 @@ const links = [
         path: "/cryp/playfair"
     },
 
-    // {
-    //     title: "Row Column Transposition",
-    //     path: "/cryp/rc-transposition"
-    // },
+    {
+        title: "Row Column Transposition",
+        path: "/cryp/rc-transposition"
+    },
 
     {
         title: "Baconian",
@@ -33,14 +33,16 @@ const links = [
         title: "Atbash",
         path: "/cryp/atbash"
     },
-    // {
-    //     title: "Blowfish",
-    //     path: "/cryp/blowfish"
-    // },
-    // {
-    //     title: "Sha256",
-    //     path: "/cryp/sha256"
-    // }
+    {
+        title: "Blowfish",
+        path: "/cryp/blowfish"
+    },
+    {
+        title: "Sha256",
+        path: "/cryp/sha256"
+    },
+
+    
 
 ]
 

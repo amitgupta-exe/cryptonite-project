@@ -1,9 +1,8 @@
 @import "./header";
 @import "./body";
-@import "./footer";
+
 
 @import "./shop";
-
 @import "./checkout";
 
 @import "./responsive";
@@ -15,14 +14,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inria Sans";
+    font-family: "Product Sans";
 }
 
 body{
+    width: 100%;
+    height: 100vh;
     background-color: #ffffff;
 }
 
-.link{
-    text-decoration: none;
-}
 

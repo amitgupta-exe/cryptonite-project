@@ -21,7 +21,7 @@ import Atbash from './pages/cryp/Atbash';
 import Shop from './pages/shop/Shop';
 import CheckOut from './pages/shop/CheckOut'
 import Sha256 from './pages/cryp/Sha256';
-
+import LeftMenu from './components/cryp/LeftMenu';
 
 function App() {
 
@@ -30,22 +30,39 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={[<Header />, <FrontPage />]} />
-          <Route path="cryp/caeser" element={[<Header />, <Caeser />]} />
-          <Route path="cryp/railfence" element={[<Header />, <RailFence />]} />
-          <Route path="cryp/playfair" element={[<Header />, <PlayFair />]} />
-          <Route path="cryp/rc-transposition" element={[<Header />, <RowColumnT />]} />
-          <Route path="cryp/baconian" element={[<Header />, <Baconian />]} />
-          <Route path="cryp/vigenere" element={[<Header />, <Vigenere />]} />
-          <Route path="cryp/atbash" element={[<Header />, <Atbash />]} />
-          <Route path="cryp/sha256" element={[<Header />, <Sha256 />]} />
+        <div className="main-container">
+
+          <div className="header">
+            <Header />
+          </div>
+
+          <div className="body">
+            
+            <div className="left">
+              <LeftMenu />
+            </div>
+
+            <div className="right">
+              <Routes>
+                <Route path="/" element={<FrontPage />} />
+                <Route path="cryp/caeser" element={<Caeser />} />
+                <Route path="cryp/railfence" element={<RailFence />} />
+                <Route path="cryp/playfair" element={<PlayFair />} />
+                <Route path="cryp/rc-transposition" element={<RowColumnT />} />
+                <Route path="cryp/baconian" element={<Baconian />} />
+                <Route path="cryp/vigenere" element={<Vigenere />} />
+                <Route path="cryp/atbash" element={<Atbash />} />
+                <Route path="cryp/sha256" element={<Sha256 />} />
+                {/* Shop */}
+                <Route path='shop' element={<Shop />} />
+                <Route path='shop/checkout' element={<CheckOut />} />
+              </Routes>
+            </div>
+          </div>
+
+        </div>
 
 
-          {/* Shop */}
-          <Route path='shop' element={<Shop />} />
-          <Route path='shop/checkout' element={<CheckOut />} />
-        </Routes>
       </BrowserRouter>
     </div>
   );

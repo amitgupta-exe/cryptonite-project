@@ -1,27 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inria+Sans&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-.header-adjuster {
+.header header {
   width: 100%;
-  height: 15vh;
-}
-
-.header {
-  background-color: #665B90;
-  width: 100%;
-  height: 15vh;
+  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 2%;
-  font-family: "Inria Sans";
-  position: fixed;
+  padding: 0 5%;
+  border: solid 1px black;
 }
 
 .logo {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   padding: 15% 25%;
@@ -53,139 +44,108 @@
   box-shadow: 0.2rem 0.2rem 0 black;
 }
 
-.links-dropdown-button h3 {
-  padding: 4rem 0;
-}
-
-.links-dropdown-body {
-  width: 70vw;
-  height: 50vh;
-  background-color: white;
-  position: absolute;
-  top: 15vh;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.links-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 2rem;
+.front-page {
+  border: solid 10px red;
+  width: 100%;
+  height: 85vh;
+  background: #665B90;
+  display: flex;
   place-items: center;
 }
 
-.link {
-  width: 30%;
-  height: 30%;
-  color: grey;
-  transition: 0.2s;
+.App {
+  width: inherit;
+  height: inherit;
 }
 
-.link:hover {
-  transform: scale(1.2);
-  transition: 0.2s;
+.main-container {
+  width: inherit;
+  height: inherit;
 }
 
-.container-middle {
-  padding: 0 15%;
+.body {
+  width: 100%;
+  height: 90vh;
   display: flex;
+}
+
+.left {
+  flex: 0 0 20%;
+  height: 100%;
+  background-color: #eeeeee;
+  font-size: 1.2rem;
+  overflow: auto;
+  max-height: 90vh;
+  padding: 3% 1%;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.link-box {
+  width: 100%;
+  height: 3rem;
+  border: solid 1 px grey;
+  display: grid;
+  place-items: center;
+}
+
+.link-box:hover {
+  background-color: #a8a8a8;
+  color: rgb(0, 0, 0);
+}
+
+.right {
+  flex: 0 0 80%;
+  height: 100%;
 }
 
 .main {
   width: 100%;
-  height: 85vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #665B90;
-}
-
-.front-page {
-  width: 100%;
-  height: 85vh;
-  background: #665B90;
-  display: grid;
-  place-items: center;
-}
-
-.left-section {
-  width: 70%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
+  padding: 3%;
 }
 
-.right-section {
-  width: 30%;
-  height: 80%;
+.title {
+  text-align: start;
+  padding: 0 2.5%;
 }
 
 .form {
   width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-evenly;
-}
-
-.input,
-.output {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  color: white;
-}
-
-.input textarea,
-.output textarea {
-  width: 90%;
-  height: 25vh;
-  resize: none;
-  border-radius: 1.5rem;
-  box-shadow: 0.5rem 0.5rem 0 black;
-  padding: 1rem;
-}
-.input textarea:focus,
-.output textarea:focus {
-  border: red;
-}
-
-.wiki {
-  height: 100%;
-  background-color: white;
-  border-radius: 1.5rem;
-  box-shadow: 0.5rem 0.5rem 0 black;
-  padding: 2rem;
-  text-align: start;
-  font-family: "Inter";
-  overflow: scroll;
-}
-.wiki h2 {
-  font-weight: 900;
-  font-size: 1.5rem;
-}
-.wiki h3 {
-  color: grey;
-  font-size: 0.8rem;
-}
-.wiki p {
-  font-size: 1rem;
-}
-
-.settings {
-  width: 100%;
+  height: 90%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  padding: 2%;
 }
 
-.footer {
-  text-align: end;
-  color: white;
-  padding: 0 2rem;
+.input-output {
+  flex: 0 0 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.input-output textarea {
+  resize: none;
+  border-radius: 1.5rem;
+  padding: 1rem;
+  width: 100%;
+  height: 45%;
+}
+
+.settings {
+  flex: 0 0 30%;
+  padding: 5%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .shop {
@@ -505,13 +465,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inria Sans";
+  font-family: "Product Sans";
 }
 
 body {
+  width: 100%;
+  height: 100vh;
   background-color: #ffffff;
-}
-
-.link {
-  text-decoration: none;
 }/*# sourceMappingURL=styles.css.map */
