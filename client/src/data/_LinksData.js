@@ -41,6 +41,10 @@ const links = [
         title: "Sha256",
         path: "/cryp/sha256"
     },
+    {
+        title: "Morse",
+        path: "/cryp/sha256"
+    },
 
     
 

@@ -24,8 +24,9 @@ const Sample = () => {
                         <option value="decrypt">Decrypt</option>
                     </select>
                     <select defaultValue={13} name="Rot-13" id="rot">
-
                     </select>
+                    <button onClick={() => { Rot(document.getElementById("rot").value, document.getElementById("mode").value) }} type="submit">Convert</button>
+
                 </div>
 
             </form>

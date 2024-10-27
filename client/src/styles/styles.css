@@ -16,7 +16,7 @@
   height: -moz-max-content;
   height: max-content;
   padding: 15% 25%;
-  background-color: #742929;
+  background-color: #000000;
   color: white;
   box-shadow: 0.3rem 0.3rem 0 black;
 }
@@ -39,7 +39,7 @@
 
 .shop-button:hover {
   color: white;
-  background-color: #742929;
+  background-color: #000000;
   transition: all 0.3s ease;
   box-shadow: 0.2rem 0.2rem 0 black;
 }
@@ -47,9 +47,9 @@
 .front-page {
   width: 100%;
   height: 85vh;
-  background: #665B90;
   display: flex;
   place-items: center;
+  justify-content: center;
 }
 
 .App {
@@ -71,7 +71,7 @@
 .left {
   flex: 0 0 20%;
   height: 100%;
-  background-color: #eeeeee;
+  background-color: #000000;
   font-size: 1.2rem;
   overflow: auto;
   max-height: 90vh;
@@ -80,20 +80,23 @@
 
 .link {
   text-decoration: none;
-  color: black;
+  color: rgb(247, 247, 247);
 }
 
 .link-box {
   width: 100%;
   height: 3rem;
-  border: solid 1 px grey;
+  border: solid 1 px rgb(255, 255, 255);
   display: grid;
   place-items: center;
 }
 
 .link-box:hover {
-  background-color: #a8a8a8;
+  background-color: #ffffff;
   color: rgb(0, 0, 0);
+}
+.link-box:hover .link {
+  color: #000000;
 }
 
 .right {
