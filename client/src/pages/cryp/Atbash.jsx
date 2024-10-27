@@ -6,7 +6,7 @@ const Atbash = () => {
 
     const [atbashText, setatbashText] = useState("");
 
-    function atbash(text, mode) {
+    function encryptDecrypt(text, mode) {
         //Creating new Baconian Object
         let atbash = new crypto.Atbash();
 
@@ -41,7 +41,7 @@ const Atbash = () => {
                     <option value="encrypt">Encrypt</option>
                     <option value="decrypt">Decrypt</option>
                 </select>
-                <button onClick={() => { atbash(document.getElementById("input").value, document.getElementById("mode").value) }} type="submit">Convert</button>
+                <button onClick={() => { encryptDecrypt(document.getElementById("input").value, document.getElementById("mode").value) }} type="submit">Convert</button>
             </div>
 
         </form>

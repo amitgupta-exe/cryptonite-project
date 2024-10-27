@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 
 const RailFence = () => {
     const [fenceText, setFenceText] = useState("");
+    const [keyValue, setKeyValue] = useState('');
+const [error, setError] = useState('');
 
     //FUNCTION TO ENCRYPT AND DECRYPT IN RAILFENCE
     function fence(text, mode, key) {
@@ -139,19 +141,43 @@ const RailFence = () => {
     }
 
 
+const handleKeyValueChange=(e)=>{
+
+    const inputValue = e.target.value;
+
+    if(!inputValue || !isNaN(inputValue)){
+
+        setKeyValue(inputValue);
+        setError('');
+    }else{
+        setError('Enter a Valid Number');
+    }
+
+
+}
     //Page
     return (
         <main className="main">
 
+            <h1 className="title">
+                RailFence Cipher
+            </h1>
+
             <form className="form" onSubmit={(e) => { e.preventDefault(); }} action="">
 
-                <div className="input">
-                    <textarea type="text" id="input" />
+                <div className="input-output">
+                    <textarea placeholder="Input"  type="number" id="input" />
+
+                    <textarea name="" id="" placeholder="Output" value={fenceText} onChange={(e) => {
+                        setFenceText(e.target.value)
+                    }} />
                 </div>
 
                 <div className="settings">
                     <div>
-                        <input id='key' type="text" />
+                        <p>Key (Number):</p>
+                        <input onChange={handleKeyValueChange} value={keyValue} id='key' type="text" />
+                        <p>{error}</p>
                     </div>
                     <select defaultValue={"encrypt"} name="" id="mode">
                         <option value="encrypt">Encrypt</option>
@@ -160,14 +186,8 @@ const RailFence = () => {
                     <button onClick={() => { fence(document.getElementById("input").value, document.getElementById("mode").value, document.getElementById("key").value) }} type="submit">Convert</button>
                 </div>
 
-                <div className="output">
-                    <label htmlFor="output">Output:</label>
+ 
 
-                    <textarea name="" id="" value={fenceText} onChange={(e) => {
-                        setFenceText(e.target.value)
-                    }} />
-                </div>
-                
             </form>
 
         </main>

@@ -65,16 +65,18 @@ const Caeser = () => {
 
   return (
     <main className="main">
+      <div>
+        <h1 className="title">
+          Caeser Cipher
+        </h1>
+      </div>
 
-      <h1 className="title">
-        Caeser Cipher
-      </h1>
 
       <form className="form" onSubmit={(e) => { e.preventDefault(); }} action="">
 
         <div className="input-output">
-            <textarea onChange={(e) => { setText(e.target.value); }} type="text" id="Input" placeholder="Input" />
-            <textarea name="" id="" placeholder="Output" value={rotText} onChange={(e) => { setRotText(e.target.value) }} />
+          <textarea onChange={(e) => { setText(e.target.value); }} type="text" id="Input" placeholder="Input" />
+          <textarea name="" id="" placeholder="Output" value={rotText} onChange={(e) => { setRotText(e.target.value) }} />
         </div>
 
         <div className="settings">
@@ -111,7 +113,7 @@ const Caeser = () => {
           </select>
           <button onClick={() => { Rot(document.getElementById("rot").value, document.getElementById("mode").value) }} type="submit">Convert</button>
         </div>
-        
+
       </form>
 
     </main>

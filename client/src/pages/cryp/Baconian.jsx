@@ -7,7 +7,7 @@ const Baconian = () => {
 
     const [baconian, setBaconian] = useState("");
 
-    function bacon(text, mode) {
+    function encryptDecrypt(text, mode) {
         //Creating new Baconian Object
         let bacon = new crypto.Baconian();
 
@@ -22,34 +22,29 @@ const Baconian = () => {
     }
 
     //JSX
-    return <main className="main container-middle">
+    return <main className="main">
 
-        <div className="left-section">
-
-            <form className="form" onSubmit={(e) => { e.preventDefault(); }} action="">
-
-                <div className="input">
-                    <label htmlFor="input">Enter Text</label>
-                    <textarea type="text" id="input" />
-                </div>
-
-                <div className="settings">
-                    <select defaultValue={"encrypt"} name="" id="mode">
-                        <option value="encrypt">Encrypt</option>
-                        <option value="decrypt">Decrypt</option>
-                    </select>
-                    <button onClick={() => { bacon(document.getElementById("input").value, document.getElementById("mode").value) }} type="submit">Convert</button>
-                </div>
-
-                <div className="output">
-                    <label htmlFor="output">Output</label>
-                    <textarea name="" id="" value={baconian} onChange={(e) => {
-                        setBaconian(e.target.value)
-                    }} />
-                </div>
-            </form>
-
+        <div>
+            <h1>Baconian Cipher</h1>
         </div>
+        <form className="form" onSubmit={(e) => { e.preventDefault(); }} action="">
+
+            <div className="input-output">
+                <textarea type="text" id="input" />
+                <textarea name="" id="" value={baconian} onChange={(e) => {
+                    setBaconian(e.target.value)
+                }} />
+            </div>
+
+            <div className="settings">
+                <select defaultValue={"encrypt"} name="" id="mode">
+                    <option value="encrypt">Encrypt</option>
+                    <option value="decrypt">Decrypt</option>
+                </select>
+                <button onClick={() => { encryptDecrypt(document.getElementById("input").value, document.getElementById("mode").value) }} type="submit">Convert</button>
+            </div>
+        </form>
+
 
     </main>
 };

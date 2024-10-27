@@ -1,5 +1,0 @@
-Styling entire project
-
-Add to cart and checkout
-
-Add min 10 more cipher methods

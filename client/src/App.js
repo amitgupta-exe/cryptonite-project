@@ -22,6 +22,7 @@ import Shop from './pages/shop/Shop';
 import CheckOut from './pages/shop/CheckOut'
 import Sha256 from './pages/cryp/Sha256';
 import LeftMenu from './components/cryp/LeftMenu';
+import BlowFish from './pages/cryp/BlowFish.jsx';
 
 function App() {
 
@@ -53,6 +54,8 @@ function App() {
                 <Route path="cryp/vigenere" element={<Vigenere />} />
                 <Route path="cryp/atbash" element={<Atbash />} />
                 <Route path="cryp/sha256" element={<Sha256 />} />
+                <Route path="cryp/blowfish" element={<BlowFish />} />
+
                 {/* Shop */}
                 <Route path='shop' element={<Shop />} />
                 <Route path='shop/checkout' element={<CheckOut />} />
