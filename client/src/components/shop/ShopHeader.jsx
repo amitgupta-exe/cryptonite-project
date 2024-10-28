@@ -21,9 +21,8 @@ const ShopHeader = () => {
 
 
     return (
-        <header>
-            <div className='header shop-header'>
-
+        <main>
+            <header className='header shop-header'>
                 <section className='left-panel'>
                     <Link className='link' to="/shop">
                         <div className="logo">
@@ -31,19 +30,15 @@ const ShopHeader = () => {
                         </div>
                     </Link>
                 </section>
-
                 <section className="right-panel">
                     <button onClick={() => setToggleCart(!toggleCart)} className="shop-button">Cart <h1>{cart.length}</h1></button>
                 </section>
-
-
-            </div>
+            </header>
             <div className='header-adjuster'></div>
             <div style={toggleCartStyles}>
                 <Cart toggleCart={toggleCart} setToggleCart={setToggleCart} />
             </div>
-
-        </header>
+        </main>
     )
 }
 

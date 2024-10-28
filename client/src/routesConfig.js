@@ -10,10 +10,7 @@ import Baconian from './pages/cryp/Baconian';
 import Vigenere from './pages/cryp/Vigenere';
 import Atbash from './pages/cryp/Atbash';
 
-import Shop from './pages/shop/Shop';
-import CheckOut from './pages/shop/CheckOut'
 import Sha256 from './pages/cryp/Sha256';
-import LeftMenu from './components/cryp/LeftMenu';
 import BlowFish from './pages/cryp/BlowFish.jsx';
 import MorseCode from './pages/cryp/MorseCode.jsx';
 

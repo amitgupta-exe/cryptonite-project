@@ -13,6 +13,7 @@ import LeftMenu from './components/cryp/LeftMenu';
 
 import Shop from './pages/shop/Shop';
 import CheckOut from './pages/shop/CheckOut';
+import FrontPage from './pages/FrontPage';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <div className="main-container">
         <div className="right">
           <Routes>
+
             {routesConfig.map(({ path, element }, index) => (
               <Route
                 key={index}
@@ -41,8 +43,8 @@ function App() {
                 }
               />
             ))}
-            {/* <Route path='shop' element={<Shop />} />
-            <Route path='shop/checkout' element={<CheckOut />} /> */}
+            <Route path='/shop' element={<Shop />} />
+            <Route path='/shop/checkout' element={<CheckOut />} />
           </Routes>
         </div>
       </div>
