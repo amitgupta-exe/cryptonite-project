@@ -1,0 +1,14 @@
+{
+  "name": "cryptonite-project",
+  "version": "1.0.0",
+  "description": "Caesar Cipher: A substitution cipher where each letter in the plaintext is shifted a fixed number of places down or up the alphabet.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "cd server && npm install && cd ../client && npm install",
+    "start": "node server/app.js",
+    "build": "cd client && npm run build"
+  },
+  "author": "",
+  "license": "ISC"
+}
